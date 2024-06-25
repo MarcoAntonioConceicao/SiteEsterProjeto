@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @font-face {
+            font-family: 'Bright';
+            src: url('./imagens/Bright.ttf') format('truetype');
+        }
+        
+        body {
+            font-family: 'Bright', Arial, sans-serif;
+            font-size: 32px;
+        }
+        
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            position: relative;
+        }
+        
+        .logo-nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            position: relative;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        .logo::after {
+            content: '';
+            display: block;
+            width: 2px;
+            height: 50px;
+            background-color: #efa27e;
+            position: absolute;
+            right: -22px;
+        }
+        
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #1e1e1e;
+            padding: 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        /* Background and Agenda Styles */
+        .background img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        /* Músicas Styles */
+        .musicas-title {
+            display: block;
+            margin: 50px auto;
+            max-width: 80%;
+        }
+        
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 175px; /* Espaçamento entre os vídeos */
+            padding: 20px;
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            width: 339px;
+            height: 628px;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .video-title {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+        }
+        
+        .video-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+            top: 0;
+            left: 0;
+        }
+        
+        .video-wrapper video {
+            width: 98%;
+            height: 98%;
+            object-fit: cover;
+            border-radius: 42px;
+        }
+        
+        .video-thumbnail.active {
+            transform: translateY(0);
+        }
+
+        .video-container h2 {
+            color: white;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-nav-container">
+            <div class="logo">
+                <img src="./imagens/EP.png" alt="Logo Ester Poesia">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">home</a> <img src="./imagens/FLOWER.png"></li>
+                    <li><a href="sobre.html">sobre</a> <img src="./imagens/FLOWER.png"></li>
+                    <li><a href="agenda.html">agenda</a> <img src="./imagens/FLOWER.png"></li>
+                    <li><a href="musicas.html">músicas</a> <img src="./imagens/FLOWER.png"></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="./imagens/YT.png" alt="YouTube"></a>
+            <a href="#"><img src="./imagens/TTK.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/esterpoesia_/"><img src="./imagens/IG.png" alt="Instagram"></a>
+            <a href="#"><img src="./imagens/TT.png" alt="Twitter"></a>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="background">
+            <img src="./imagens/BG-MUSIC.png" alt="Background Image">
+        </div>
+        <div>
+        <img src="/imagens/AGENDA.png" alt="Músicas Title Image" class="musicas-title">
+    </div>
+        <section id="musicas">
+        
+            <div class="video-container">
+                <div class="video-thumbnail" data-video="videos/VIDEO1.mp4">
+                    <h2> The Only Exception </h2> <img src="imagens/01.png" alt="The Only Exception">
+                    <div class="video-title"></div>
+                    <div class="play-button"></div>
+                </div>
+                <div class="video-thumbnail" data-video="videos/VIDEO4.mp4">
+                    <h2> Anunciação  </h2><img src="imagens/02.png" alt="Anunciação">
+                    <div class="video-title"></div>
+                    <div class="play-button"></div>
+                </div>
+                <div class="video-thumbnail" data-video="videos/VIDEO3.mp4">
+                   <h2> Figures </h2> <img src="imagens/03.png" alt="Figures">
+                    <div class="video-title"></div>
+                    <div class="play-button"></div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Remove active class from all thumbnails
+                document.querySelectorAll('.video-thumbnail').forEach(thumb => thumb.classList.remove('active'));
+
+                // Add active class to the clicked thumbnail
+                this.classList.add('active');
+                
+                const videoSrc = this.getAttribute('data-video');
+                const videoWrapper = document.createElement('div');
+                videoWrapper.classList.add('video-wrapper');
+                const videoElement = document.createElement('video');
+                videoElement.src = videoSrc;
+                videoElement.controls = true;
+                videoElement.autoplay = true;
+                videoWrapper.appendChild(videoElement);
+               
+                // Preserve the h2 element and the play button
+                const title = this.querySelector('h2').outerHTML;
+                const playButton = this.querySelector('.play-button').outerHTML;
+
+                // Clear only the video thumbnail image
+                this.querySelector('img').remove();
+
+                // Append the video wrapper and preserved elements
+                this.innerHTML = `${title}${playButton}`;
+                this.appendChild(videoWrapper);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

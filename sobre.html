@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Ester Poesia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+@font-face {
+    font-family: 'Bright';
+    src: url('./imagens/Bright.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Bright', Arial, sans-serif;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: #efa27e;
+    position: absolute;
+    right: -22px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1e1e1e;
+    padding: 30px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.titulo {
+    margin-top: 30px;
+    margin-right: 760px; /* Adjust as necessary */
+}
+
+.titulo img {
+    width: 40%; 
+    height: auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.lady-section {
+    position: relative;
+    flex: 1;
+    margin-left: 100px; /* Move slightly to the right */
+}
+
+.lady-image {
+    width: 50%;
+    height: auto;
+}
+
+
+.sobre-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+}
+
+.sobre-image {
+    
+    width: 90%;
+    height: auto;
+    margin-top: -150px; /* Adjust the negative value to move the image upwards */
+    margin-right: 100px;
+}
+
+.sobre-text {
+    margin-top: 60px;
+    text-align: left;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sobre-text p {
+    color: #1e1e1e;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 650px; /* Limit the width of the text box */
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-nav-container">
+            <div class="logo">
+                <img src="./imagens/EP.png" alt="Logo Ester Poesia">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">home</a> <img src="./imagens/FLOWER.png">  </li>
+                    <li><a href="sobre.html">sobre</a> <img src="./imagens/FLOWER.png"> </li>
+                    <li><a href="agenda.html">agenda</a> <img src="./imagens/FLOWER.png"> </li>
+                    <li><a href="musicas.html">músicas</a> <img src="./imagens/FLOWER.png"> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="./imagens/YT.png" alt="YouTube"></a>
+            <a href="#"><img src="./imagens/TTK.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/esterpoesia_/"><img src="./imagens/IG.png" alt="Instagram"></a>
+            <a href="#"><img src="./imagens/TT.png" alt="Twitter"></a>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="background">
+            <img src="./imagens/BG.png" alt="Background Image">
+        </div>
+        <div class="titulo">
+            <img src="./imagens/TITULO.png" alt="Título">
+        </div>
+        <div class="content-wrapper">
+            <div class="lady-section">
+                <img src="./imagens/FOTO2.png" alt="Lady Image" class="lady-image">
+                
+            </div>
+            <div class="sobre-section">
+                <img src="./imagens/SOBRE.png" alt="Sobre" class="sobre-image">
+                <div class="sobre-text">
+                    <p> <strong>Ester</strong> é uma talentosa artista e compositora do Vale do Itajaí, que começou sua jornada na música aos 9 anos de idade, influenciada por sua mãe. Hoje, aos 24 anos, ela continua a perseguir seus sonhos, realizando apresentações por todo o Vale. Mãe do pequeno <strong>Mikkel</strong>, Ester se dedica a conciliar a paixão pela música com os desafios da maternidade. </p> <p> Além de sua atuação como cantora, Ester é também uma presença cativante no <strong>Instagram</strong>, onde compartilha suas criações e reflexões com um público crescente e dedicado. Seu canal é um espaço onde a arte poética ganha vida, proporcionando aos espectadores uma imersão única em suas emoções e pensamentos. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
