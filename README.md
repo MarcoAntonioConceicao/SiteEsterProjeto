@@ -1,4 +1,4 @@
-Projeto Desenvolvido para matéria de Ciências de Computação - Programação Web - Professor: Jhonathan Alves
+Projeto de Extensão desenvolvido para matéria de Ciências de Computação - Programação Web - Professor: Jhonathan Alves
 
 
 Desenvolvido Por: Marco Antonio da Conceição, Kaio Felipe Saldanha e Mario Eldon
